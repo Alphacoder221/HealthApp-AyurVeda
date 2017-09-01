@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor"
+            android:textColor="#287ED4"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/doctor_name_id"
+            android:textColor="#6B7783"
+            />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hospital Name"
+            android:id="@+id/hospital_id"
+            android:textColor="#6B7783"
+            />
+        <EditText
+            android:textColor="#6B7783"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DOB"
+            android:id="@+id/dobdoctor_id"
+            android:inputType="date"
+            />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6B7783"
+            android:hint="Contact Number"
+            android:id="@+id/contactnumberdoctor_id"
+
+            />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6B7783"
+            android:hint="Email id"
+            android:id="@+id/doctor_email_id"
+
+            />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6B7783"
+            android:hint="Details"
+            android:id="@+id/detailsdoctor_id"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/doctor_submit_id"
+            android:background="#28D44A"
+            android:onClick="dothis_submit_doctor"
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show"
+            android:id="@+id/back_id"
+            android:onClick="dothis_show_doctor"
+            android:background="#339FFF"
+            />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

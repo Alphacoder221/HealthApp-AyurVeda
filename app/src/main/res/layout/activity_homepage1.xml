@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mrkunalsinghal.myapplication.homepage1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textStyle="bold|italic"
+                android:textSize="25dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:id="@+id/usertitle"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>\
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="wrap_content"
+                android:id="@+id/viewPager"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp">
+                 </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:text="Profile"
+                        android:textColor="@color/switch_thumb_normal_material_light"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textSize="25dp"
+                        android:background="#D7D550"
+                        android:onClick="user_profile"
+                        android:layout_marginRight="20dp"
+
+                        />
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:background="#D7D550"
+                        android:textColor="@color/switch_thumb_normal_material_light"
+                        android:text="appointment"
+                        android:textSize="25dp"
+                        android:id="@+id/button2"
+                        android:onClick="user_appointment"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_above="@id/ly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:text="view Appointment"
+                        android:textColor="@color/switch_thumb_normal_material_light"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="#D7D550"
+                        android:textSize="25dp"
+                        android:id="@+id/button3"
+                        android:layout_marginRight="20dp"
+                        android:onClick="view_appointment"
+                        />
+
+                    <Button
+                        android:layout_marginTop="30dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textColor="@color/switch_thumb_normal_material_light"
+                        android:background="#FF0000"
+                        android:text="Emergency"
+                        android:textSize="25dp"
+                        android:id="@+id/emergency"
+                        android:onClick="useremergency"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_above="@id/ly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:text="Medicine Time"
+                        android:textColor="@color/switch_thumb_normal_material_light"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="#D7D550"
+                        android:textSize="25dp"
+                        android:id="@+id/medicieCall"
+                        android:layout_marginRight="20dp"
+                        android:onClick="view_appointment"
+                        />
+                 </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
